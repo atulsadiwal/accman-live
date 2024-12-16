@@ -20,9 +20,9 @@ const IMAGE_DATA = [
 const OurCampus = () => {
     return (
         <>
-            <section className="relative bg-[#F0F4F8] pb-8">
+            <div className="relative bg-[#F0F4F8] pb-8">
                 <motion.div
-                    className="bg-[#007589] text-white shadow-lg rounded-lg h-80 flex items-center px-6 lg:px-12 sticky top-10 z-0"
+                    className="bg-[#007589] text-white shadow-lg rounded-lg h-80 flex items-center px-6 lg:px-12y top-10 z-0"
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -91,8 +91,7 @@ const OurCampus = () => {
                         ))}
                     </motion.div>
                 </div>
-
-            </section>
+            </div>
         </>
     );
 }
