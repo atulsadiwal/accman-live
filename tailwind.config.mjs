@@ -7,8 +7,22 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+      },
+      animation: {
+        marquee: "marquee 30s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       backgroundImage: {
         'BG1': "url('/image/interested.jpg')",
+        'BG2': "url('/image/interested.jpg')",
+        'BG3': "url('/image/college-students-posing-outdoors.jpg')",
       }
     },
   },
