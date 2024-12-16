@@ -23,6 +23,7 @@ export default {
         'BG1': "url('/image/interested.jpg')",
         'BG2': "url('/image/interested.jpg')",
         'BG3': "url('/image/college-students-posing-outdoors.jpg')",
+        'BG4': "url('/image/austin-texas-usa-at-the-texas.jpg')",
       }
     },
   },
