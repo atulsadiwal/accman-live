@@ -9,7 +9,7 @@ const Footer = () => {
                 {/* Empower Your Education Section */}
                 <div className="relative bg-white">
                     {/* Top Half Background - White */}
-                    <div className="h-32 bg-white"></div>
+                    <div className="h-32 bg-gray-100"></div>
 
                     {/* Empower Box Overlapping Both Backgrounds */}
                     <div className="absolute inset-x-0 top-16 mx-auto w-2/3 px-6 py-6 rounded-lg shadow-lg z-10 flex flex-col md:flex-row items-center md:items-start justify-between">

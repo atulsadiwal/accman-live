@@ -132,7 +132,15 @@ const Courses = () => {
                         Courses
                     </h1>
                     <div className="mt-6 space-y-4">
-                        {["Course 1", "Course 2", "Course 3", "Course 4", "Course 5"].map(
+                        {[
+                            'BB.SC. IN COMPUTER SCIENCE',
+                            'B.A. IN PSYCHOLOGY',
+                            'BBA',
+                            'B.ENG. IN CIVIL ENGINEERING',
+                            'BFA IN GRAPHIC DESIGN',
+                            'B.SC. IN NURSING',
+                            'B.TECH',
+                        ].map(
                             (course, index) => (
                                 <button
                                     key={index}

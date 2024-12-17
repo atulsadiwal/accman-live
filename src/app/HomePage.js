@@ -1,3 +1,4 @@
+import ContactUs from '@/components/ContactUs';
 import Courses from '@/components/Courses';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -25,8 +26,8 @@ const HomePage = () => {
             <NavBar />
             <MainSection />
             <TopCard />
-            <JoinUsSection />
             <WhyChooseUs />
+            <JoinUsSection />
             <YourJourney />
             <OurCampus />
             <Courses />

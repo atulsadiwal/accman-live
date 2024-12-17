@@ -87,13 +87,13 @@ const WeAreTheOne = () => {
                 <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                     <div>
                         <h2 className="text-3xl font-semibold mb-6 font-playfair">We Are One Of The Best University</h2>
-                        <p className="text-[0.6rem] font-medium">
+                        <p className="text-lg font-medium">
                             We stand proud as one of the largest universities, fostering a vibrant academic
                             community. Our commitment to excellence, diverse programs, and cutting-edge research
                             propels us to inspire and shape the future. Join us in a journey of knowledge and
                             innovation.
                         </p>
-                        <p className="mt-4 text-[0.6rem] font-medium">
+                        <p className="mt-4 text-lg font-medium">
                             Embracing endless possibilities, our university is a gateway to diverse opportunities.
                             Join us in a journey of discovery, learning, and growth. We are open for opportunities.
                         </p>
@@ -125,15 +125,15 @@ const WeAreTheOne = () => {
                                         <img
                                             src={card.image}
                                             alt={card.name}
-                                            className="w-10 h-10 rounded-full object-cover mr-4"
+                                            className="w-16 h-16 rounded-full object-cover mr-4"
                                         />
                                         <div>
-                                            <h3 className="text-[0.8rem] text-indigo-900 font-playfair font-semibold">{card.name}</h3>
-                                            <p className="text-[0.6rem] text-gray-500">{card.course}</p>
+                                            <h3 className="text-lg text-indigo-900 font-playfair font-semibold">{card.name}</h3>
+                                            <p className="text-sm font-semibold text-gray-500">{card.course}</p>
                                         </div>
                                     </div>
 
-                                    <p className="text-gray-600 text-[0.6rem]">{card.feedback}</p>
+                                    <p className="text-gray-600">{card.feedback}</p>
                                 </div>
                             </div>
                         ))}

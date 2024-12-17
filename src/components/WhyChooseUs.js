@@ -25,17 +25,17 @@ const WhyChooseUs = () => {
                     <div className="lg:w-3/7 w-full">
                         <h6 className="text-blue-800 uppercase text-xs font-semibold mb-2 tracking-widest">Why Choose Us</h6>
                         <h2 className="text-3xl lg:text-4xl font-semibold mb-4 font-playfair tracking-wider">Why ACCMAN University</h2>
-                        <p className="text-gray-800 mb-6 text-xs leading-5">
+                        <p className="text-gray-800 mb-6 text-sm leading-5">
                             ACCMAN University offers cutting-edge programs, renowned faculty, and a dynamic learning environment, fostering innovation and excellence. With state-of-the-art facilities and a commitment to student success, ACCMAN
                             University is the ideal choice for those seeking a transformative educational experience.
                         </p>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
-                            <ul className="space-y-2 text-gray-600 text-xs">
+                            <ul className="space-y-3 text-gray-600 text-sm">
                                 <li><CheckCircle className="inline-block text-green-500" /> Graduate Programs</li>
                                 <li><CheckCircle className="inline-block text-green-500" /> Research and Innovation</li>
                                 <li><CheckCircle className="inline-block text-green-500" /> Academic Excellence</li>
                             </ul>
-                            <ul className="space-y-2 text-gray-600 text-xs">
+                            <ul className="space-y-3 text-gray-600 text-sm">
                                 <li><CheckCircle className="inline-block text-green-500" /> International Hubs</li>
                                 <li><CheckCircle className="inline-block text-green-500" /> Alumni & Giving</li>
                                 <li><CheckCircle className="inline-block text-green-500" /> Industry Connections</li>
@@ -43,19 +43,19 @@ const WhyChooseUs = () => {
                         </div>
                         <div className="flex justify-start space-x-8 sm:space-x-40 mb-6">
                             <div>
-                                <p className="text-4xl font-semibold text-gray-900">
-                                    25<span className="text-blue-900">+</span>
+                                <p className="text-5xl font-semibold text-gray-900">
+                                    25<span>+</span>
                                 </p>
-                                <p className="text-gray-500 text-xs">Years of Experience</p>
+                                <p className="text-gray-500 text-sm">Years of Experience</p>
                             </div>
                             <div>
-                                <p className="text-4xl font-semibold text-gray-900">
-                                    19k<span className="text-blue-900">+</span>
+                                <p className="text-5xl font-semibold text-gray-900">
+                                    19k<span>+</span>
                                 </p>
-                                <p className="text-gray-500 text-xs">Students Graduated</p>
+                                <p className="text-gray-500 text-sm">Students Graduated</p>
                             </div>
                         </div>
-                        <button className="bg-blue-900 text-white px-6 py-2">READ MORE</button>
+                        <button className="bg-blue-900 text-white font-semibold rounded-lg hover:bg-gray-200 hover:border hover:text-black px-6 py-2">READ MORE</button>
                     </div>
                 </div>
             </div>
