@@ -21,7 +21,7 @@ export default {
       },
       backgroundImage: {
         'BG1': "url('/image/interested.jpg')",
-        'BG2': "url('/image/interested.jpg')",
+        'BG2': "url('/image/building.png')",
         'BG3': "url('/image/college-students-posing-outdoors.jpg')",
         'BG4': "url('/image/austin-texas-usa-at-the-texas.jpg')",
       }

@@ -6,7 +6,7 @@ const data = [
   {
     id: 1,
     icon: <FaUniversity />,
-    title: 'University Life',
+    title: 'Institute Life',
     description:
       'Transformative academics, personal growth, lifelong friendships in a dynamic, diverse community.',
   },

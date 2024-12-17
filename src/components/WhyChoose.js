@@ -44,14 +44,14 @@ const WhyChoose = () => {
         </h6>
         {/* Big Heading */}
         <h2 className="text-3xl lg:text-4xl font-semibold mb-4 font-playfair tracking-wider">
-          Why ACCMAN University
+          Why ACCMAN Institute
         </h2>
         {/* Paragraph */}
         <p className="text-gray-800 mb-6 text-xs leading-5">
-          ACCMAN University offers cutting-edge programs, renowned faculty, and a
+          ACCMAN Institute offers cutting-edge programs, renowned faculty, and a
           dynamic learning environment, fostering innovation and excellence.
           With state-of-the-art facilities and a commitment to student success,
-          ACCMAN University is the ideal choice for those seeking a transformative
+          ACCMAN Institute is the ideal choice for those seeking a transformative
           educational experience.
         </p>
         {/* Features Section */}

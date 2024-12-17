@@ -5,7 +5,7 @@ const data = [
     {
         id: 1,
         icon: <GraduationCap />,
-        title: 'University Life',
+        title: 'Institute Life',
         description:
             'Transformative academics, personal growth, lifelong friendships in a dynamic, diverse community.',
     },

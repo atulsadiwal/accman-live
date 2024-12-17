@@ -86,7 +86,7 @@ const WeAreTheOne = () => {
             <div className="w-full h-[100vh] sm:h-[75vh] bg-indigo-900 text-white py-6 md:py-20 px-8 sm:px-52">
                 <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                     <div>
-                        <h2 className="text-3xl font-semibold mb-6 font-playfair">We Are One Of The Best University</h2>
+                        <h2 className="text-3xl font-semibold mb-6 font-playfair">We Are One Of The Best Institute</h2>
                         <p className="text-lg font-medium">
                             We stand proud as one of the largest universities, fostering a vibrant academic
                             community. Our commitment to excellence, diverse programs, and cutting-edge research
@@ -94,14 +94,14 @@ const WeAreTheOne = () => {
                             innovation.
                         </p>
                         <p className="mt-4 text-lg font-medium">
-                            Embracing endless possibilities, our university is a gateway to diverse opportunities.
+                            Embracing endless possibilities, our Institute is a gateway to diverse opportunities.
                             Join us in a journey of discovery, learning, and growth. We are open for opportunities.
                         </p>
                     </div>
                     <div>
                         <img
                             src='/image/arizon-map.png'
-                            alt="University"
+                            alt="Institute"
                             className="w-full h-auto object-cover"
                         />
                     </div>

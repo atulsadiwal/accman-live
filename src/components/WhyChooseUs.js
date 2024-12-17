@@ -24,10 +24,10 @@ const WhyChooseUs = () => {
 
                     <div className="lg:w-3/7 w-full">
                         <h6 className="text-blue-800 uppercase text-xs font-semibold mb-2 tracking-widest">Why Choose Us</h6>
-                        <h2 className="text-3xl lg:text-4xl font-semibold mb-4 font-playfair tracking-wider">Why ACCMAN University</h2>
+                        <h2 className="text-3xl lg:text-4xl font-semibold mb-4 font-playfair tracking-wider">Why ACCMAN Institute</h2>
                         <p className="text-gray-800 mb-6 text-sm leading-5">
-                            ACCMAN University offers cutting-edge programs, renowned faculty, and a dynamic learning environment, fostering innovation and excellence. With state-of-the-art facilities and a commitment to student success, ACCMAN
-                            University is the ideal choice for those seeking a transformative educational experience.
+                            ACCMAN Institute offers cutting-edge programs, renowned faculty, and a dynamic learning environment, fostering innovation and excellence. With state-of-the-art facilities and a commitment to student success, ACCMAN
+                            Institute is the ideal choice for those seeking a transformative educational experience.
                         </p>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
                             <ul className="space-y-3 text-gray-600 text-sm">

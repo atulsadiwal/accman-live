@@ -8,7 +8,7 @@ const UniversityEvents = () => {
         {/* Top Section */}
         <div className=" mb-4">
           <h6 className="text-indigo-900 font-semibold uppercase text-xs tracking-widest mb-4">
-            University Events
+          Institute Events
           </h6>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <h2 className="text-4xl font-medium  text-gray-900 leading-snug font-playfair">
