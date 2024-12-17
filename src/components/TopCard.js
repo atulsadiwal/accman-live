@@ -3,9 +3,9 @@ import React from 'react';
 const TopCard = () => {
     return (
         <>
-            <div className="container max-w-[100vw]   px-4 sm:px-16   bg-indigo-900">
+            <div className="px-4 sm:px-16 bg-indigo-900">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-                    <div className="text-white p-6 flex flex-col justify-between">
+                    <div className="text-white p-6 flex flex-col justify-between min-h-48">
                         <div>
                             <h3 className="text-sm font-semibold font-playfair">Core Academic & Knowledge</h3>
                             <p className="mt-4 text-xs">
@@ -20,7 +20,7 @@ const TopCard = () => {
                         </a>
                     </div>
 
-                    <div className="bg-indigo-900 text-white p-6 flex flex-col justify-between">
+                    <div className="bg-indigo-900 text-white p-6 flex flex-col justify-between min-h-48">
                         <div>
                             <h3 className="text-sm font-semibold font-playfair">College Advisory</h3>
                             <p className="mt-4 text-xs">
@@ -35,10 +35,10 @@ const TopCard = () => {
                         </a>
                     </div>
 
-                    <div className="h-96 md:h-full bg-BG3 bg-cover bg-top">
+                    <div className="min-h-48 md:h-full bg-BG3 bg-cover bg-top">
                     </div>
 
-                    <div className="bg-indigo-900 text-white p-6 flex flex-col justify-between">
+                    <div className="bg-indigo-900 text-white p-6 flex flex-col justify-between min-h-48">
                         <div>
                             <h3 className="text-sm font-semibold font-playfair">Curriculum & Pedagogy</h3>
                             <p className="mt-4 text-xs ">

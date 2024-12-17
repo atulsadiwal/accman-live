@@ -3,8 +3,8 @@ import { CheckCircle, Play } from 'lucide-react';
 
 const WhyChooseUs = () => {
     return (
-        <>
-            <section className="max-w-[1400px] mx-auto px-2">
+        <section className="border-b border-gray-300">
+            <div className="max-w-[1400px] mx-auto px-2">
                 <div className="flex flex-col lg:flex-row justify-between items-center w-full px-1.5 py-4 sm:py-20 bg-white">
                     <div className="flex lg:w-4/7 w-full space-x-6 items-center mb-8 lg:mb-0">
                         <div className="relative w-2/6 flex flex-col items-center">
@@ -24,9 +24,9 @@ const WhyChooseUs = () => {
 
                     <div className="lg:w-3/7 w-full">
                         <h6 className="text-blue-800 uppercase text-xs font-semibold mb-2 tracking-widest">Why Choose Us</h6>
-                        <h2 className="text-3xl lg:text-4xl font-semibold mb-4 font-playfair tracking-wider">Why AKG University</h2>
+                        <h2 className="text-3xl lg:text-4xl font-semibold mb-4 font-playfair tracking-wider">Why ACCMAN University</h2>
                         <p className="text-gray-800 mb-6 text-xs leading-5">
-                            AKG University offers cutting-edge programs, renowned faculty, and a dynamic learning environment, fostering innovation and excellence. With state-of-the-art facilities and a commitment to student success, AKG
+                            ACCMAN University offers cutting-edge programs, renowned faculty, and a dynamic learning environment, fostering innovation and excellence. With state-of-the-art facilities and a commitment to student success, ACCMAN
                             University is the ideal choice for those seeking a transformative educational experience.
                         </p>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
@@ -58,8 +58,8 @@ const WhyChooseUs = () => {
                         <button className="bg-blue-900 text-white px-6 py-2">READ MORE</button>
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     );
 }
 

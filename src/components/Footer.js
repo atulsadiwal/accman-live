@@ -168,7 +168,7 @@ const Footer = () => {
                                 alt=""
                                 className="h-8"
                             />
-                            <p className="text-gray-400">Copyright &copy; 2024 AKG University. All rights reserved.</p>
+                            <p className="text-gray-400">Copyright &copy; 2024 ACCMAN University. All rights reserved.</p>
                         </div>
                         <div className="flex space-x-4 mt-4 lg:mt-0">
                             <a

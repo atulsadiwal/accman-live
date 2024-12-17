@@ -18,7 +18,7 @@ const Opportunities = () => {
                 </div>
 
                 <div className="bg-indigo-900  text-white py-3 px-8 sm:py-4 sm:px-20  flex flex-col justify-center">
-                    <p className="text-[0.8rem] font-medium mb-4 tracking-[0.2rem]">AKG UNIVERSITY</p>
+                    <p className="text-[0.8rem] font-medium mb-4 tracking-[0.2rem]">ACCMAN UNIVERSITY</p>
 
                     <h1 className="text-xl md:text-4xl font-semibold font-playfair mb-2 leading-relaxed tracking-wider">We Are Open For Opportunities</h1>
 
