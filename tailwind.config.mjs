@@ -24,6 +24,7 @@ export default {
         'BG2': "url('/image/building.png')",
         'BG3': "url('/image/college-students-posing-outdoors.jpg')",
         'BG4': "url('/image/austin-texas-usa-at-the-texas.jpg')",
+        'BG5': "url(/image/pgdm/pgdm-bg.jpg)",
       }
     },
   },
