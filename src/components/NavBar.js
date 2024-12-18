@@ -1,6 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Info, Clipboard, Book, GraduationCap } from 'lucide-react';
+import NotificationSlider from "./NotificationSlider";
 
 const NavItems = [
   {
@@ -41,7 +44,6 @@ const NavBar = () => {
   const handleDropdownPosition = (e) => {
     const rect = e.target.getBoundingClientRect();
     const windowWidth = window.innerWidth;
-    
     if (rect.right + 450 > windowWidth) {
       setDropdownDirection('right');
     } else {
@@ -51,11 +53,14 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="flex justify-between pl-4">
-        <div className="w-3/12 flex justify-center items-center">
+      <div className="sticky top-0 z-[100] shadow-lg w-full flex justify-between pl-4 backdrop-blur-md bg-white/40">
+        <div className="w-[12%] max-[1400px]:w-[20%] flex justify-center items-center">
           <img src="/image/accman-logo.jpg" alt="logo" className="h-12 w-auto" />
         </div>
-        <div className="w-9/12 flex flex-col mx-3">
+        <div className="w-[10%] max-[1400px]:hidden flex justify-center items-center">
+          <NotificationSlider />
+        </div>
+        <div className="w-[70%] max-[1400px]:w-[80%] flex flex-col mx-3">
           <div className="bg-[#1E293B] text-white text-sm flex justify-end items-center">
             <div className="flex">
               <a href="tel:+18002000777" className="bg-transparent text-white px-6 py-2 font-bold shadow-lg">
@@ -70,14 +75,13 @@ const NavBar = () => {
               </a>
             </div>
           </div>
-
-          <div className="bg-white h-[44px] flex justify-end items-center gap-0 xl:gap-4 relative">
+          <div className="flex justify-end items-center gap-0 xl:gap-4 relative">
             <nav className="hidden md:flex gap-0 xl:gap-4">
               {NavItems.map((item, index) => (
                 <div
                   className="relative group"
                   key={index}
-                  onMouseEnter={(e) => { 
+                  onMouseEnter={(e) => {
                     setOpenDropdown(index);
                     handleDropdownPosition(e);
                   }}
@@ -85,16 +89,15 @@ const NavBar = () => {
                 >
                   <ul className="list-none">
                     <li className="">
-                      <button className="text-sm p-3 font-semibold text-gray-700 hover:text-blue-600 flex items-center transition duration-300 ease-in-out">
+                      <button className="text-sm p-2 font-semibold text-gray-700 hover:text-blue-600 flex items-center transition duration-300 ease-in-out">
                         {item.name} <ChevronDown size={16} className="ml-1" />
                       </button>
                     </li>
                   </ul>
-
                   {openDropdown === index && (
-                    <div 
+                    <div
                       className={`absolute top-full ${dropdownDirection === 'right' ? 'right-0' : 'left-0'} bg-white border shadow-xl z-20 transition-all duration-300 ease-in-out rounded-lg flex`}
-                      style={{ minWidth: "550px"}}
+                      style={{ minWidth: "550px" }}
                     >
                       <div className="w-1/2 pl-2">
                         <ul className="py-4">
@@ -102,7 +105,7 @@ const NavBar = () => {
                             <li key={subIndex} className="transition duration-200">
                               <a
                                 href="#"
-                                className="block text-xs font-semibold px-2 py-1.5 text-gray-700 hover:text-blue-600"
+                                className="block text-sm hover:scale-[0.96] transition-all duration-200 ease-linear font-semibold px-2 py-1.5 text-gray-700 hover:text-blue-600"
                               >
                                 {subItem}
                               </a>
@@ -110,30 +113,25 @@ const NavBar = () => {
                           ))}
                         </ul>
                       </div>
-
                       <div className="w-1/2 flex flex-col items-center h-full">
                         <div className="w-full h-1/4">
                           <img src="/image/article2.jpg" alt="Image" className="object-cover rounded-tr-lg h-full w-full" />
                         </div>
-
                         <div className="w-full flex flex-col h-3/4 bg-indigo-950 rounded-br-lg p-4">
                           <div className="flex flex-wrap justify-between items-center h-full">
-                            <div className="flex flex-col items-center space-y-2 w-1/2 border-b border-white justify-center p-4">
+                            <div className="flex flex-col items-center space-y-2 w-1/2 border-b border-r border-white justify-center p-4">
                               <Info size={28} className="text-white" />
                               <span className="text-xs text-white">Overview</span>
                             </div>
-
-                            <div className="flex flex-col items-center space-y-2 w-1/2 border-l border-white justify-center p-4">
+                            <div className="flex flex-col items-center space-y-2 w-1/2 border-b justify-center p-4">
                               <Clipboard size={28} className="text-white" />
                               <span className="text-xs text-white">Curriculum</span>
                             </div>
-
                             <div className="flex flex-col items-center space-y-2 w-1/2 border-r border-white justify-center p-4">
                               <Book size={28} className="text-white" />
                               <span className="text-xs text-white">Resources</span>
                             </div>
-
-                            <div className="flex flex-col items-center space-y-2 w-1/2 border-t border-white justify-center p-4">
+                            <div className="flex flex-col items-center space-y-2 w-1/2 justify-center p-4">
                               <GraduationCap size={28} className="text-white" />
                               <span className="text-xs text-white">Graduation</span>
                             </div>
@@ -145,7 +143,6 @@ const NavBar = () => {
                 </div>
               ))}
             </nav>
-
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -155,7 +152,6 @@ const NavBar = () => {
               </button>
             </div>
           </div>
-
           {isMenuOpen && (
             <div className="md:hidden bg-white shadow-lg">
               {NavItems.map((item, index) => (
@@ -168,7 +164,6 @@ const NavBar = () => {
                   >
                     {item.name} <ChevronDown size={16} />
                   </button>
-
                   {openDropdown === index && (
                     <ul className="bg-gray-50">
                       {item.dropdown.map((subItem, subIndex) => (

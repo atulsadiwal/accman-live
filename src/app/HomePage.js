@@ -16,7 +16,6 @@ import YourJourney from '@/components/YourJourney';
 const HomePage = () => {
     return (
         <>
-            <NavBar />
             <MainSection />
             <TopCard />
             <WhyChooseUs />
@@ -28,7 +27,6 @@ const HomePage = () => {
             <NewsAndArticles />
             <WeAreTheOne />
             <UniversityEvents />
-            <Footer />
         </>
     );
 }
