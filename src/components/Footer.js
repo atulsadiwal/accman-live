@@ -18,9 +18,9 @@ const Footer = () => {
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="px-2 py-2 text-[0.6rem] border focus:outline-none text-gray-800 w-48 lg:w-72"
+                            className="px-2 py-2 text-xs border focus:outline-none text-gray-800 w-48 lg:w-72"
                         />
-                        <button className="bg-indigo-900 uppercase tracking-wider text-white px-4 py-2 text-[0.6rem] ms-2 hover:bg-blue-700 transition">
+                        <button className="bg-indigo-900 uppercase tracking-wider text-white px-4 py-2 text-xs ms-2 hover:bg-blue-700 transition">
                             Subscribe
                         </button>
                     </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div>
                             <h3 className='text-sm font-playfair font-semibold mb-4'>Get in Touch</h3>
-                            <ul className="space-y-2 text-white text-[0.6rem]">
+                            <ul className="space-y-2 text-white text-xs">
                                 <li className="hover:text-yellow-400 cursor-pointer">
                                     Admissions Enquiry: 1800-200-0777
                                 </li>
@@ -55,7 +55,7 @@ const Footer = () => {
 
                         <div>
                             <h3 className="text-sm font-playfair font-semibold mb-4 ">Our Campus</h3>
-                            <ul className="space-y-2 text-[0.6rem]">
+                            <ul className="space-y-2 text-xs">
                                 <li className="hover:text-yellow-400 cursor-pointer">Academic</li>
                                 <li className="hover:text-yellow-400 cursor-pointer">
                                     Planning & Administration
@@ -71,7 +71,7 @@ const Footer = () => {
 
                         <div>
                             <h3 className="text-sm font-playfair font-semibold mb-4">Academics</h3>
-                            <ul className="space-y-2 text-[0.6rem]">
+                            <ul className="space-y-2 text-xs">
                                 <li className="hover:text-yellow-400 cursor-pointer">Library</li>
                                 <li className="hover:text-yellow-400 cursor-pointer">
                                     Time Schedule
@@ -94,7 +94,7 @@ const Footer = () => {
 
                         <div>
                             <h3 className="text-sm font-playfair font-semibold mb-4">Campus Life</h3>
-                            <ul className="space-y-2 text-[0.6rem]">
+                            <ul className="space-y-2 text-xs">
                                 <li className="hover:text-yellow-400 cursor-pointer">
                                     Student Organizations
                                 </li>
@@ -119,7 +119,7 @@ const Footer = () => {
 
                     <hr className="border-t border-gray-600 mb-2 mt-8" />
                     <div className="flex flex-col lg:flex-row justify-between items-center">
-                        <p className="text-white text-[0.6rem]">
+                        <p className="text-white text-xs">
                             Copyright © 2023 By Brandshow. All rights reserved.
                         </p>
                         <div className="flex space-x-4 text-xs">
