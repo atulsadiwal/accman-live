@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { ChevronLeft, ChevronRight, Brain, Users, Microscope } from 'lucide-react'
 import PlacementGlimpses from '@/components/PlacementGlimpses'
 import Testimonials from '@/components/Testimonials'
+import Alumini from '@/components/Alumini'
 
 const features = [
     {
@@ -154,6 +155,8 @@ export default function PGDM() {
             <PlacementGlimpses />
 
             <Testimonials />
+
+            <Alumini />
         </>
     )
 }
