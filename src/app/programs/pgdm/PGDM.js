@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { ChevronLeft, ChevronRight, Brain, Users, Microscope } from 'lucide-react'
+import PlacementGlimpses from '@/components/PlacementGlimpses'
+import Testimonials from '@/components/Testimonials'
 
 const features = [
     {
@@ -49,11 +51,11 @@ export default function PGDM() {
     const totalSlides = features.length
 
     const nextSlide = useCallback(() => {
-        setCurrentSlide((prev) => (prev + 1) % totalSlides) // Infinite loop for next slide
+        setCurrentSlide((prev) => (prev + 1) % totalSlides)
     }, [totalSlides])
 
     const prevSlide = useCallback(() => {
-        setCurrentSlide((prev) => (prev === 0 ? totalSlides - 1 : prev - 1)) // Infinite loop for previous slide
+        setCurrentSlide((prev) => (prev === 0 ? totalSlides - 1 : prev - 1))
     }, [totalSlides])
 
     return (
@@ -92,11 +94,11 @@ export default function PGDM() {
                 </div>
             </section>
 
-            <section className='max-w-6xl mx-auto px-3 mt-28 h-[120vh]'>
+            <section className='max-w-6xl mx-auto px-3 mt-16 py-10'>
                 <div className='text-center'>
                     <h3 className='text-4xl'>Why PGDM</h3>
                     <p className='text-lg'>
-                    Business Analytics, though it has been there for decades in various forms supporting business decisions, has become a watchword in the market since 2010. Recent advancements in Data Science and Big Data technology enabled Business Analytics in crunching huge amount of data to provide valuable Data-Driven Business Insights. Quick Google Search will reveal a plethora of articles, blogs and publications quoting Business Analytics as the Next Big Thing in Business world, the sexiest job in 21st Century and so on.
+                        Business Analytics, though it has been there for decades in various forms supporting business decisions, has become a watchword in the market since 2010. Recent advancements in Data Science and Big Data technology enabled Business Analytics in crunching huge amount of data to provide valuable Data-Driven Business Insights. Quick Google Search will reveal a plethora of articles, blogs and publications quoting Business Analytics as the Next Big Thing in Business world, the sexiest job in 21st Century and so on.
                     </p>
                 </div>
 
@@ -148,6 +150,10 @@ export default function PGDM() {
                     </div>
                 </div>
             </section>
+
+            <PlacementGlimpses />
+
+            <Testimonials />
         </>
     )
 }
