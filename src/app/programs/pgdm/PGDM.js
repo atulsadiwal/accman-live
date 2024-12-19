@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { ChevronLeft, ChevronRight, Brain, Users, Microscope } from 'lucide-react'
+import PlacementBanner from '@/components/PlacementBanner'
 
 const features = [
     {
@@ -91,8 +92,7 @@ export default function PGDM() {
                     </div>
                 </div>
             </section>
-
-            <section className='max-w-6xl mx-auto px-3 mt-28 h-[120vh]'>
+            <section className='max-w-6xl mx-auto px-3 mt-28'>
                 <div className='text-center'>
                     <h3 className='text-4xl'>Why PGDM</h3>
                     <p className='text-lg'>
@@ -112,7 +112,7 @@ export default function PGDM() {
                                     <ChevronLeft className="w-6 h-6 text-gray-600" />
                                 </button>
 
-                                <div className="flex overflow-hidden w-full">
+                                <div className="flex overflow-hidden w-full p-4">
                                     <div
                                         className="flex transition-transform duration-500 ease-in-out"
                                         style={{
@@ -148,6 +148,7 @@ export default function PGDM() {
                     </div>
                 </div>
             </section>
+            <PlacementBanner />
         </>
     )
 }

@@ -20,11 +20,13 @@ export default {
         },
       },
       backgroundImage: {
+        'svgElement': "url('/image/skills-sprite.webp')",
         'BG1': "url('/image/interested.jpg')",
         'BG2': "url('/image/building.png')",
         'BG3': "url('/image/college-students-posing-outdoors.jpg')",
         'BG4': "url('/image/austin-texas-usa-at-the-texas.jpg')",
         'BG5': "url(/image/pgdm/pgdm-bg.jpg)",
+        'BG6': "url(/image/Placement_Student.jpg)",
       }
     },
   },
