@@ -121,96 +121,98 @@ const Alumini = () => {
 
     return (
         <>
-            <section className="min-h-screen flex items-center justify-center bg-black text-white p-5">
-                <div className="container mx-auto px-10 flex flex-col md:flex-row ">
-                    <div className="md:w-1/2 space-y-10 mr-12 p-5">
-                        <h2 className="text-purple-400 text-lg">Alumini</h2>
-                        <h1 className="text-4xl md:text-4xl font-bold leading-tight">
-                            Discover why students and professionals praise their transformative
-                            experiences at ACCMAN Business School.
-                        </h1>
-                        <div className="space-x-4">
-                            <button
-                                className={`py-2 px-4 rounded ${selectedCategory === "alumni"
-                                    ? "bg-purple-500 text-white"
-                                    : "bg-gray-700"
-                                    }`}
-                                onClick={() => handleCategoryChange("alumni")}
-                            >
-                                What Our Alumni Says
-                            </button>
-                            <button
-                                className={`py-2 px-4 rounded ${selectedCategory === "students"
-                                    ? "bg-purple-500 text-white"
-                                    : "bg-gray-700"
-                                    }`}
-                                onClick={() => handleCategoryChange("students")}
-                            >
-                                What Our Student Says
-                            </button>
+            <section className="bg-black">
+                <div className="max-w-[1500px] mx-auto min-h-screen flex items-center justify-center text-white">
+                    <div className="container mx-auto px-10 flex flex-col md:flex-row ">
+                        <div className="md:w-1/2 space-y-10 mr-12 p-5">
+                            <h2 className="text-purple-400 text-lg">Alumini</h2>
+                            <h1 className="text-4xl md:text-4xl font-bold leading-tight">
+                                Discover why students and professionals praise their transformative
+                                experiences at ACCMAN Business School.
+                            </h1>
+                            <div className="space-x-4">
+                                <button
+                                    className={`py-2 px-4 rounded ${selectedCategory === "alumni"
+                                        ? "bg-purple-500 text-white"
+                                        : "bg-gray-700"
+                                        }`}
+                                    onClick={() => handleCategoryChange("alumni")}
+                                >
+                                    What Our Alumni Says
+                                </button>
+                                <button
+                                    className={`py-2 px-4 rounded ${selectedCategory === "students"
+                                        ? "bg-purple-500 text-white"
+                                        : "bg-gray-700"
+                                        }`}
+                                    onClick={() => handleCategoryChange("students")}
+                                >
+                                    What Our Student Says
+                                </button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="md:w-1/2 lg:w-1/3 relative h-[60vh] flex bg-gradient-to-t from-gray-900 via-black to-gray-800 rounded-lg p-4 shadow-lg">
-                        <div
-                            id="testimonialContainer"
-                            className="relative w-full h-full overflow-y-scroll snap-y snap-mandatory"
-                            style={{
-                                scrollBehavior: "smooth",
-                                scrollbarWidth: "none",
-                            }}
-                        >
-                            <style jsx>{`
+                        <div className="md:w-1/2 lg:w-1/3 relative h-[60vh] flex bg-gradient-to-t from-gray-900 via-black to-gray-800 rounded-lg p-4 shadow-lg">
+                            <div
+                                id="testimonialContainer"
+                                className="relative w-full h-full overflow-y-scroll snap-y snap-mandatory"
+                                style={{
+                                    scrollBehavior: "smooth",
+                                    scrollbarWidth: "none",
+                                }}
+                            >
+                                <style jsx>{`
               #testimonialContainer::-webkit-scrollbar {
                 display: none; /* For Chrome, Safari, and Opera */
               }
             `}</style>
 
-                            {achievers[selectedCategory].map((testimonial, index) => (
-                                <motion.div
-                                    key={index}
-                                    className="p-6 mb-8 bg-gray-700 rounded-lg shadow-lg h-full flex flex-col snap-center"
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    viewport={{ once: false, margin: "0px 0px -200px 0px" }}
-                                >
-                                    <div className="flex items-start mb-4">
-                                        <div className="w-24 h-24">
-                                            <img
-                                                src={testimonial.image}
-                                                alt={testimonial.name}
-                                                className="w-full h-full object-cover rounded-full shadow-lg"
-                                            />
+                                {achievers[selectedCategory].map((testimonial, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className="p-6 mb-8 bg-gray-700 rounded-lg shadow-lg h-full flex flex-col snap-center"
+                                        initial={{ opacity: 0, scale: 0.8 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        transition={{ duration: 0.5 }}
+                                        viewport={{ once: false, margin: "0px 0px -200px 0px" }}
+                                    >
+                                        <div className="flex items-start mb-4">
+                                            <div className="w-24 h-24">
+                                                <img
+                                                    src={testimonial.image}
+                                                    alt={testimonial.name}
+                                                    className="w-full h-full object-cover rounded-full shadow-lg"
+                                                />
+                                            </div>
+                                            <div className="ml-4 flex-1">
+                                                <h3 className="text-xl font-semibold text-left">
+                                                    {testimonial.name}
+                                                </h3>
+                                                {testimonial.designation && (
+                                                    <p className="text-sm text-gray-400 text-left mt-1">
+                                                        {testimonial.designation}
+                                                    </p>
+                                                )}
+                                            </div>
                                         </div>
-                                        <div className="ml-4 flex-1">
-                                            <h3 className="text-xl font-semibold text-left">
-                                                {testimonial.name}
-                                            </h3>
-                                            {testimonial.designation && (
-                                                <p className="text-sm text-gray-400 text-left mt-1">
-                                                    {testimonial.designation}
-                                                </p>
-                                            )}
-                                        </div>
-                                    </div>
 
-                                    <p className="text-lg italic text-center">
-                                        "{testimonial.content}"
-                                    </p>
-                                </motion.div>
+                                        <p className="text-lg italic text-center">
+                                            "{testimonial.content}"
+                                        </p>
+                                    </motion.div>
 
-                            ))}
-                        </div>
-                        <div className="relative flex flex-col justify-between items-center w-2 bg-gray-700 rounded-full ml-2">
-                            <div
-                                className="absolute top-0 left-0 w-full rounded-full"
-                                style={{
-                                    height: `${(scrollPosition / scrollHeight) * 100}%`,
-                                    background: "linear-gradient(to right, cyan, blue)",
-                                    transition: "height 0.2s ease-in-out",
-                                }}
-                            />
+                                ))}
+                            </div>
+                            <div className="relative flex flex-col justify-between items-center w-2 bg-gray-700 rounded-full ml-2">
+                                <div
+                                    className="absolute top-0 left-0 w-full rounded-full"
+                                    style={{
+                                        height: `${(scrollPosition / scrollHeight) * 100}%`,
+                                        background: "linear-gradient(to right, cyan, blue)",
+                                        transition: "height 0.2s ease-in-out",
+                                    }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

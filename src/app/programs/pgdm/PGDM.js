@@ -6,6 +6,7 @@ import PlacementGlimpses from '@/components/PlacementGlimpses'
 import Testimonials from '@/components/Testimonials'
 import Alumini from '@/components/Alumini'
 import AboutSection from '@/components/AboutSection'
+import FAQ from '@/components/FAQ'
 
 const features = [
     {
@@ -96,6 +97,14 @@ export default function PGDM() {
                 </div>
             </section>
 
+            <AboutSection />
+
+            <Alumini />
+
+            <PlacementGlimpses />
+
+            <Testimonials />
+
             <section className='max-w-6xl mx-auto px-3 mt-16 py-10'>
                 <div className='text-center'>
                     <h3 className='text-4xl'>Why PGDM</h3>
@@ -153,15 +162,7 @@ export default function PGDM() {
                 </div>
             </section>
 
-            <AboutSection />
-
-            <Alumini />
-
-            <PlacementGlimpses />
-
-            <Testimonials />
-
-
+            <FAQ />
         </>
     )
 }
