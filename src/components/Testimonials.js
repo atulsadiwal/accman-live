@@ -16,7 +16,7 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <section className="bg-black h-[150vh]">
+        <section className="bg-black">
             <div className="max-w-[1400px] mx-auto px-2 text-white flex justify-between items-center gap-4 py-10">
                 <div className="flex-1 w-6/12 text-center lg:text-left mb-8 lg:mb-0">
                     <h2 className="text-[#c69c6d] text-5xl lg:text-6xl font-light mb-8">
