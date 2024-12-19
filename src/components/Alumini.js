@@ -125,7 +125,7 @@ const Alumini = () => {
         <>
             <section className="bg-black py-36">
                 <div className="max-w-[1500px] mx-auto flex items-center justify-center text-white">
-                    <div className="container mx-auto px-10 flex flex-col justify-between md:flex-row ">
+                    <div className="container mx-auto px-10 flex flex-col items-center justify-evenly md:flex-row ">
                         <div className="md:w-1/2 space-y-10 mr-12 p-5">
                             <h2 className="text-purple-400 text-lg">Alumini</h2>
                             <h1 className="text-4xl md:text-4xl font-bold leading-tight">
