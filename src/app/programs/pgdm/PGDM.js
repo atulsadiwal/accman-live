@@ -151,12 +151,13 @@ export default function PGDM() {
                     </div>
                 </div>
             </section>
+            <Alumini />
 
             <PlacementGlimpses />
 
             <Testimonials />
 
-            <Alumini />
+
         </>
     )
 }
