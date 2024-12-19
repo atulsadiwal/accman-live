@@ -20,6 +20,7 @@ export default {
         },
       },
       backgroundImage: {
+        'text-gradient': 'linear-gradient(to right, #dc2626, #1d4ed8)',
         'BG1': "url('/image/interested.jpg')",
         'BG2': "url('/image/building.png')",
         'BG3': "url('/image/college-students-posing-outdoors.jpg')",

@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Brain, Users, Microscope } from 'lucide-reac
 import PlacementGlimpses from '@/components/PlacementGlimpses'
 import Testimonials from '@/components/Testimonials'
 import Alumini from '@/components/Alumini'
+import AboutSection from '@/components/AboutSection'
 
 const features = [
     {
@@ -151,6 +152,9 @@ export default function PGDM() {
                     </div>
                 </div>
             </section>
+
+            <AboutSection />
+
             <Alumini />
 
             <PlacementGlimpses />
