@@ -68,7 +68,7 @@ export default function PGDM() {
                 <div className='relative flex flex-col md:flex-row items-center justify-between mx-auto px-4 py-12'>
                     <div className='text-left mb-8 md:mb-0 w-5/12 pl-5'>
                         <div className='border-t-8 border-gray-800 w-full mt-4'></div>
-                        <h2 className='text-6xl md:text-8xl font-bold uppercase text-gray-800'>
+                        <h2 className='text-8xl font-bold uppercase text-gray-800 max-md:text-4xl max-sm:text-3xl'>
                             PGDM Programs
                         </h2>
                         <div className='border-t-8 border-gray-800 w-full mt-4'></div>
