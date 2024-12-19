@@ -123,9 +123,9 @@ const Alumini = () => {
 
     return (
         <>
-            <section className="bg-black">
-                <div className="max-w-[1500px] mx-auto min-h-screen flex items-center justify-center text-white">
-                    <div className="container mx-auto px-10 flex flex-col md:flex-row ">
+            <section className="bg-black py-36">
+                <div className="max-w-[1500px] mx-auto flex items-center justify-center text-white">
+                    <div className="container mx-auto px-10 flex flex-col justify-between md:flex-row ">
                         <div className="md:w-1/2 space-y-10 mr-12 p-5">
                             <h2 className="text-purple-400 text-lg">Alumini</h2>
                             <h1 className="text-4xl md:text-4xl font-bold leading-tight">
@@ -154,7 +154,7 @@ const Alumini = () => {
                             </div>
                         </div>
 
-                        <div className="md:w-1/2 lg:w-1/3 relative h-[60vh] flex bg-gradient-to-t from-gray-900 via-black to-gray-800 rounded-lg p-4 shadow-lg">
+                        <div className="md:w-1/2 lg:w-1/3 relative h-[60vh] flex justify-end bg-gradient-to-t from-gray-900 via-black to-gray-800 rounded-lg p-4 shadow-lg">
                             <div
                                 id="testimonialContainer"
                                 className="relative w-full h-full overflow-y-scroll snap-y snap-mandatory"
@@ -220,7 +220,7 @@ const Alumini = () => {
                 </div>
             </section>
 
-            <section className='bg-BG3 bg-no-repeat bg-fixed bg-cover h-[60vh]'></section>
+            <section className='bg-BG3 bg-no-repeat bg-fixed bg-cover h-[50vh] bg-[#B0EFFD] bg-blend-multiply bg-opacity-80'></section>
         </>
     );
 };
