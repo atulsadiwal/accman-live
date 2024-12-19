@@ -14,12 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserrat.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <div className={`${montserrat.variable} antialiased`}>
+      {children}
+    </div>
   );
 }
