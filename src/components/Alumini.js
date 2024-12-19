@@ -219,6 +219,8 @@ const Alumini = () => {
                     </div>
                 </div>
             </section>
+
+            <section className='bg-BG3 bg-no-repeat bg-fixed bg-cover h-[60vh]'></section>
         </>
     );
 };

@@ -98,6 +98,7 @@ export default function PGDM() {
                 </div>
             </section>
             <AboutSection />
+            <PlacementBanner />
             <Alumini />
             <PlacementGlimpses />
             <Testimonials />
@@ -158,7 +159,6 @@ export default function PGDM() {
                 </div>
             </section>
             <FAQ />
-            <PlacementBanner />
         </>
     )
 }
