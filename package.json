@@ -1,5 +1,6 @@
 {
   "name": "accman-live",
+  "homepage": "https://accman.in/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
