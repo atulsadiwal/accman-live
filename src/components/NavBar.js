@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Info, Clipboard, Book, GraduationCap } from 'lucide-react';
 import NotificationSlider from "./NotificationSlider";
+import Link from "next/link";
 
 const NavItems = [
   {
@@ -55,7 +56,9 @@ const NavBar = () => {
     <>
       <div className="sticky top-0 z-[100] shadow-lg w-full flex justify-between pl-4 backdrop-blur-md bg-white/40">
         <div className="w-[12%] max-[1400px]:w-[20%] flex justify-center items-center">
-          <img src="/image/accman-logo.jpg" alt="logo" className="h-12 w-auto" />
+          <Link href="/">
+            <img src="/image/accman-logo.jpg" alt="logo" className="h-12 w-auto" />
+          </Link>
         </div>
         <div className="w-[10%] max-[1400px]:hidden flex justify-center items-center">
           <NotificationSlider />
